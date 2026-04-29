@@ -1,54 +1,120 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #f4f4f4;
+:root{
+  --azul:#0b3c82;
+  --azul2:#1e88e5;
+  --amarelo:#ffc107;
 }
 
-header {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 20px;
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f5f7fb;
 }
 
-nav {
-    background-color: #34495e;
-    padding: 10px;
-    text-align: center;
+/* HEADER */
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 40px;
+  background:white;
 }
 
-nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
+header img{height:60px;}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
 }
 
-nav a:hover {
-    color: #1abc9c;
+.top-btn{
+  background:var(--amarelo);
+  padding:10px 20px;
+  border-radius:25px;
 }
 
-section {
-    padding: 40px;
-    text-align: center;
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:60px;
+  background:linear-gradient(120deg,#eaf1fb,#ffffff);
+  border-radius:20px;
+  margin:20px;
 }
 
-button {
-    background-color: #1abc9c;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+.hero-text{
+  max-width:500px;
 }
 
-button:hover {
-    background-color: #16a085;
+.hero h1{
+  font-size:40px;
+  color:var(--azul);
 }
 
-footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.hero img{
+  width:400px;
+  border-radius:20px;
+}
+
+/* SECTION */
+.section{
+  padding:60px 20px;
+  text-align:center;
+}
+
+.beneficios{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.beneficio{
+  width:200px;
+}
+
+/* GRID EXEMPLOS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+}
+
+.card img{
+  width:100%;
+}
+
+/* CTA FINAL */
+.cta{
+  background:var(--azul);
+  color:white;
+  padding:40px;
+  margin:40px;
+  border-radius:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.cta-btn{
+  background:var(--amarelo);
+  padding:15px 25px;
+  border-radius:25px;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
 }
